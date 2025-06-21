@@ -1,0 +1,96 @@
+.buttons{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    padding: 10px 45px;
+    width: 300px;
+    border: none;
+}
+
+.follow{
+  background-color: #1877F2;
+  color: #FFFFFF;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.follow:hover{
+  background-color: hsl(214, 89%, 48%);
+}
+
+.like{
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: #FFFFFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.like:hover{
+  background: linear-gradient(45deg, hsl(44, 99%, 70%), hsl(26, 96%, 50%), hsl(333, 68%, 45%), hsl(283, 61%, 42%), hsl(235, 61%, 52%));
+
+}
+
+.subscribe{
+  background-color: #FF0000;
+  color: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscribe:hover{
+  background-color: hsl(0, 100%, 45%);
+}
+
+.get-in-touch{
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.get-in-touch:hover{
+  background-color: hsl(0, 0%, 10%);
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .buttons{
+        height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.cheetsheet-btn{
+    width: 400px;
+    height:100px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0 ,0 ,0.3), -10px -10px 20px rgba(0, 0 ,0 ,0.3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cheetsheet-btn .download-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #4f46e5, #3b82f6); /* Nice blue gradient */
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  transform: translateY(-2px);
+}
